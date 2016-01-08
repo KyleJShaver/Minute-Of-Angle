@@ -1,0 +1,9 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.kyleshaver.minuteofangle.SettingsActivity$GeneralPreferenceFragment"
+        android:title="Measurement Options" android:icon="@drawable/ic_settings_black_24dp" />
+
+</preference-headers>

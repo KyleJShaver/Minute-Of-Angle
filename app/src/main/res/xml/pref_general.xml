@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="shootersMOAActive"
+        android:title="Shooter's MOA"
+        android:summary="Shooter's MOA calculates POI Offset to be 1 inch for every 100 yards. True MOA POI Offset is 1.047 inches per 100 yards."
+        android:defaultValue="false" />
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:key="distanceToTargetUnit"
+        android:title="Distance to Target Units"
+        android:defaultValue="Yards"
+        android:entries="@array/pref_distance_to_target_unit_titles"
+        android:entryValues="@array/pref_distance_to_target_unit_titles"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <ListPreference
+        android:key="poiOffsetUnit"
+        android:title="Point of Impact Offset Units"
+        android:defaultValue="Inches"
+        android:entries="@array/pref_poi_offset_unit_titles"
+        android:entryValues="@array/pref_poi_offset_unit_titles"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+</PreferenceScreen>
